@@ -1,0 +1,135 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300;400&family=Gowun+Dodum&family=Jua&display=swap');
+.jua{
+  font-family: 'Jua', sans-serif;
+}
+.dongle{
+  font-family: 'Dongle', sans-serif;
+}
+.gowun{
+  font-family: 'Gowun Dodum', sans-serif;
+}
+
+.wrap{
+  width: 1024px;
+  margin: 0 auto;
+  /* background-color: #aaa; */
+}
+
+header{
+  height: 500px;
+  overflow: hidden;
+  /* 이미지수정필요 */
+  min-width: 1024px;
+}
+header::after{
+
+}
+header .wrap{
+  position: relative;
+  height: 100%;
+}
+
+header .logo{
+  position: absolute;
+  left: 100px;
+  top: 100px;
+}
+header .logo a{
+  display: block;
+}
+header .logo a img{
+  width: 200px;
+}
+
+header .intro{
+  position: absolute;
+  left: 110px;
+  top: 50%;
+  /* top: 100px; */
+}
+header .intro p{
+  color: #000;
+  margin-top: 10px;
+}
+
+header .illust{
+  background-image: url(../image/aboutme.png);
+  width: 400px;
+  height: 400px;
+  background-size: cover;
+  position: absolute;
+  bottom: 0;
+  right: 80px
+}
+
+header .pattern{
+  width: 100%;
+  height: 215px;
+  background-image: url(../image/wave-haikei.svg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  position: absolute;
+  bottom: -121px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.title{
+  padding: 50px 0;
+}
+.title .wrap{
+  padding: 20px 0;
+  text-align: center;
+}
+.title p{}
+.title h1{
+  color: #000;
+  font-weight: normal;
+}
+
+main{
+  padding: 50px 0 100px;
+}
+main .wrap{
+  display: flex;
+  justify-content: center;
+}
+main ul{
+
+}
+main ul li{
+  margin: 20px 0;
+  position: relative;
+}
+main ul li::after{
+  content: "";
+  display: block;
+  width: 0;
+  height: 15px;
+  position: absolute;
+  bottom: 10px;
+  background-color: #8ec3ff;
+  z-index: -1;
+  transition: width 0.5s;
+}
+main ul li:hover:after{
+  width: 100%;
+}
+main ul li a{
+  color: #000;
+  font-size: 50px;
+}
+
+
+footer{
+  padding: 20px 0;
+}
+footer .wrap{
+  display: flex;
+  justify-content: center;
+}
+footer .wrap img{
+  width: 100px;
+}
