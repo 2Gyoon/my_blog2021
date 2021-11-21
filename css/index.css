@@ -1,0 +1,28 @@
+/* index.html */
+
+main{
+  padding: 50px 0 100px;
+}
+main .wrap{
+  display: flex;
+  justify-content: center;
+}
+main ul{
+
+}
+main ul li{
+  margin: 20px 0;
+  position: relative;
+}
+main ul li a{
+  color: #000;
+  font-size: 50px;
+  background-image: linear-gradient(transparent calc(100% - 0.8rem), rgba(142, 195, 255, 1) 0.8rem);
+  background-position: 0 100%;
+  background-size: 0 2.4rem;
+  background-repeat: no-repeat;
+  transition: background-size 0.5s;
+}
+main ul li:hover a{
+  background-size: 100% 2.4rem;
+}

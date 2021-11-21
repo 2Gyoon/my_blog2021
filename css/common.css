@@ -1,10 +1,7 @@
 @charset "utf-8";
-@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300;400&family=Gowun+Dodum&family=Jua&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Jua&display=swap');
 .jua{
   font-family: 'Jua', sans-serif;
-}
-.dongle{
-  font-family: 'Dongle', sans-serif;
 }
 .gowun{
   font-family: 'Gowun Dodum', sans-serif;
@@ -28,7 +25,33 @@ header::after{
 header .wrap{
   position: relative;
   height: 100%;
+  background-color: #8ec3ff;
 }
+
+header .menu{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+}
+header .menu li{
+  margin: 0 20px;
+}
+header .menu li a{
+  color: #fff;
+  padding-bottom: 2px;
+  border-bottom: 2px solid rgba(255,255,255,0);
+}
+header .menu li a:hover{
+  transition: border-bottom 0.4s;
+  border-bottom: 2px solid rgba(255,255,255, 1);
+}
+header .menu li a.active{
+  border-bottom: 2px solid rgba(255,255,255, 1);
+}
+
+
+
 
 header .logo{
   position: absolute;
@@ -49,7 +72,7 @@ header .intro{
   /* top: 100px; */
 }
 header .intro p{
-  color: #000;
+  color: #fff;
   margin-top: 10px;
 }
 
@@ -87,39 +110,6 @@ header .pattern{
 .title h1{
   color: #000;
   font-weight: normal;
-}
-
-main{
-  padding: 50px 0 100px;
-}
-main .wrap{
-  display: flex;
-  justify-content: center;
-}
-main ul{
-
-}
-main ul li{
-  margin: 20px 0;
-  position: relative;
-}
-main ul li::after{
-  content: "";
-  display: block;
-  width: 0;
-  height: 15px;
-  position: absolute;
-  bottom: 10px;
-  background-color: #8ec3ff;
-  z-index: -1;
-  transition: width 0.5s;
-}
-main ul li:hover:after{
-  width: 100%;
-}
-main ul li a{
-  color: #000;
-  font-size: 50px;
 }
 
 
