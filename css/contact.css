@@ -1,0 +1,47 @@
+main{
+  padding: 50px 0 100px;
+}
+main .wrap{
+  display: flex;
+  justify-content: center;
+}
+main .my_info{
+  text-align: center;
+}
+main .my_info .img_part{
+  width: 300px;
+  height: 300px;
+  border: 1px solid #eee;
+  border-radius: 50%;
+  margin: 0 auto;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.4);
+  background-image: url(../image/aboutme.png);
+  background-size: auto 180%;
+  background-position: 55% 10%;
+  background-repeat: no-repeat;
+}
+main .my_info .text_part{
+  padding-top: 50px;
+}
+main .my_info .text_part li{
+  padding-bottom: 20px;
+}
+main .my_info .text_part li p{
+  font-size: 20px;
+}
+main .my_info .text_part li p a{
+  color: #000;
+  font-weight: bold;
+}
+main .my_info .text_part li p span{
+  color: #000;
+  font-weight: bold;
+}
+main .my_info > p{
+  padding-top: 50px;
+  font-size: 24px;
+}
+.star{
+  font-size: 25px;
+  color: gold;
+}

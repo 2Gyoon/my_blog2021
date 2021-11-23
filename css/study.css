@@ -1,0 +1,47 @@
+main{
+  padding: 50px 0 100px;
+}
+main .wrap{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+main .wrap > h3{
+  width: 500px;
+  text-align: center;
+  padding-bottom: 50px;
+}
+main .study_lists{
+  width: 500px;
+}
+main .study_list{
+  text-align: center;
+  padding: 30px;
+  border-top: 3px dashed #8ec3ff;
+}
+main .study_list p{
+  padding-bottom: 20px;
+  font-weight: bold;
+}
+main .study_list a{
+  color: #000;
+  font-weight: bold;
+}
+main .study_list a{
+  background-image: linear-gradient(transparent calc(100% - 0.4rem), rgba(142,195,255,1) 0.4rem);
+  background-position: 0 100%;
+  background-size: 0 2.4rem;
+  background-repeat: no-repeat;
+  transition: background-size 0.5s;
+}
+main .study_list:hover a{
+  background-size: 100% 2.4rem;
+}
+
+
+main .more{
+  padding-top: 50px;
+}
+main .more h3{
+  cursor: pointer;
+}
