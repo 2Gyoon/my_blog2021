@@ -11,26 +11,7 @@
 </head>
 <body>
   <header>
-    <div class="wrap">
-      <ul class="menu">
-        <li><a class="active jua" href="./intro.html">Introduction</a></li>
-        <li><a class="jua" href="./portfolio.html">Portfolio</a></li>
-        <li><a class="jua" href="./study.html">Study</a></li>
-        <li><a class="jua" href="./contact.html">Contact Me</a></li>
-      </ul>
-      <div class="logo">
-        <a href="/index.html">
-          <img src="./image/logo.svg" alt="로고">
-        </a>
-      </div>
-      <div class="intro gowun">
-        <p>CODing-ing</p>
-        <p>코딩 중인 퍼블리셔</p>
-        <p>포트폴리오와 공부 중인 내용을 올리고 있습니다.</p>
-      </div>
-      <div class="illust"></div>
-      <div class="pattern"></div>
-    </div>
+    <?php include "./header.php"?>
   </header>
 
   <div class="title">

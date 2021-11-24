@@ -19,13 +19,17 @@ main .study_list{
   padding: 30px;
   border-top: 3px dashed #8ec3ff;
 }
-main .study_list p{
+main .study_list p.regist_day{
   padding-bottom: 20px;
   font-weight: bold;
 }
 main .study_list a{
   color: #000;
   font-weight: bold;
+}
+main .study_list p.content{
+  padding-top: 20px;
+  font-size: 15px;
 }
 main .study_list a{
   background-image: linear-gradient(transparent calc(100% - 0.4rem), rgba(142,195,255,1) 0.4rem);
@@ -44,4 +48,8 @@ main .more{
 }
 main .more h3{
   cursor: pointer;
+}
+
+.loading{
+  text-align: center;
 }
