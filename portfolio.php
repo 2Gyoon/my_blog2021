@@ -24,35 +24,30 @@
   <main>
     <div class="wrap">
       <ul class="port_list">
-        <li>
-          <a href="./portfolio_d.php" class="black">
-            <p class="jua">Fanboard</p>
+<?php
+  include "./CODing_ing_db.php";
+  $sql = "select * from port order by num desc";
+  $result = mysqli_query($db, $sql);
+  $total_record = mysqli_num_rows($result);
+  for($i = 0; $i < $total_record; $i++){
+    mysqli_data_seek($result,$i);
+    $row = mysqli_fetch_array($result);
+    $num = $row["num"];
+    $title = $row["title"];
+    $content = $row["content"];
+    $regist_day = $row["regist_day"];
+    $link = $row["link"];
+    $file_copied = "./data/".$row["file_copied"];
+?>        
+        <li style="background-image: url(<?=$file_copied?>);">
+          <a href=<?=$link?> class="black">
+            <p class="jua"><?=$title?></p>
           </a>
         </li>
-        <li>
-          <a class="black">
-            <p class="jua">Olive Young</p>
-          </a>
-        </li>
-        <li>
-          <a class="black">
-            <p class="jua">Summer K-pop</p>
-          </a>
-        </li>
-        <li>
-          <a class="black">
-            <p class="jua">Magazine</p>
-          </a>
-        </li>
-        <li>
-          <a class="black">
-            <p class="jua">Magazine</p>
-          </a>
-        </li>
+<?php
+  }
+?>
       </ul>
-      <div class="more">
-        <h3 class="gowun">더보기 ▼</h3>
-      </div>
     </div>
   </main>
 

@@ -16,7 +16,7 @@ main .port_list li{
   margin: 20px;
   overflow: hidden;
   cursor: pointer;
-  background-image: url(../image/fanboard_ch1.png);
+  /* background-image: url(../image/fanboard_ch1.png); */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 0%;
@@ -40,12 +40,7 @@ main .black p{
   color: #fff;
 }
 
-main .more{
+#port_box{
   display: flex;
   justify-content: center;
-  padding-top: 50px;
-
-}
-main .more h3{
-  cursor: pointer;
 }

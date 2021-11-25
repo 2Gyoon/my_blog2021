@@ -6,11 +6,10 @@ $(document).ready(function(){
       type: 'POST',
       success: function(result){
         if(result){
-          $(".study_lists").append('<div class="loading">잠시만요...</div>');
           setTimeout(function(){
             $(".loading").hide();
             $(".study_lists").append(result);
-          }, 500)
+          }, 200);
         }
       }
     })

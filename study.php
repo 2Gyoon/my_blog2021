@@ -44,7 +44,7 @@
     $link = $row["link"];
 ?>        
         <li class="study_list">
-          <p class="regist_day"><?=$regist_day?> : <?=$num?></p>
+          <p class="regist_day"><?=$regist_day?></p>
           <a href=<?=$link?> target="_blank"><?=$title?></a>
           <p class="content"><?=$content?></p>
         </li>
